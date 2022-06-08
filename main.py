@@ -38,7 +38,7 @@ def setup_logger():
 
 def help(update, context):
     update.message.reply_text('Mövcud əmrlər:\n' +
-                              '/Game - Yeni oyun başladmaq\n' +
+                              '/Game - Yeni oyun başlat\n' +
                               '/master - Aparıcı olmaq\n' +
                               '/rating - Qrup üzrə reytinq', reply_to_message_id=True)
 
@@ -67,7 +67,7 @@ def command_start(update, context: CallbackContext):
     if update.effective_chat.type == "private":
         
         addme = InlineKeyboardButton(text="🧚 Qrupa əlavə edin!", url="https://t.me/Rahid_Crocodile_Bot?startgroup=a")
-        sohbet = InlineKeyboardButton(text="💬 Support", url="https://t.me/Gencler_Mekani")
+        sohbet = InlineKeyboardButton(text="💬 Oyun Qrupu", url="https://t.me/Dark_Region")
         oyun = InlineKeyboardButton(text="🤖 Botlar", url="https://t.me/Rahid_44")
         admin = InlineKeyboardButton(text="👨🏻‍💻 Sahib", url="https://t.me/Rahid_2003")
 
